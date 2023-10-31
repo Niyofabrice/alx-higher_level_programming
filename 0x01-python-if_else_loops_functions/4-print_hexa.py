@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 for num in range(99):
-    print(f"{num} = 0x{num:2x}")
+    print(f"{num} = 0x{num:1x}")
