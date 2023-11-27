@@ -4,7 +4,5 @@
 
 
 class Rectangle:
-    """class that defines properties of a rectangle.
-    """
-
+    """class rectangle"""
     pass
