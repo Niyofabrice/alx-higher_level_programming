@@ -23,6 +23,12 @@ import sys
 
 def init_board(n):
     """Initialize an `n`x`n` sized chessboard with 0's."""
+    if type(n) is not int:
+        print("N must be an number")
+        exit(1)
+    if n < 4:
+        print("N must be at least 4")
+        exit(1)
     board = []
     [board.append([]) for i in range(n)]
     [row.append(' ') for i in range(n) for row in board]
