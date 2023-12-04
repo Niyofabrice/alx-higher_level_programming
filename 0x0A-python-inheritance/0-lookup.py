@@ -4,9 +4,12 @@
 def lookup(obj):
     """ function that returns list of available attributes
     and methods of an object
-    Args:
+
+   Args:
         obj (class): object
-    Returns:
-        lsit: list of available attributes and methods of an object """
+
+   Returns:
+        list: list of available attributes and methods of an object
+    """
 
     return dir(obj)
