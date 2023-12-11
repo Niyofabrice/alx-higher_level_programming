@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """ Defines class Base """
-from json import dumps, loads
+import json
 
 
 class Base:
-    """ base of all other classes """
+    """ Base of all other classes """
     __nb_objects = 0
 
     def __init__(self, id=None):
