@@ -17,9 +17,9 @@ class Base:
     @staticmethod
     def to_json_string(list_dictionaries):
         """ List to JSON string """
-        if list_dictionaries is not None:
-            return json.dumps(list_dictionaries)
-        return "[]"
+        if list_dictionaries is None or list_dictionaries == []:
+            return "[]"
+        return json.dumps(list_dictionaries)
 
     @classmethod
     def save_to_file(cls, list_objs):
