@@ -81,3 +81,11 @@ class Rectangle(Base):
             rectangle += ("#" * self.width) + "\n"
 
         print(rectangle, end="")
+
+    def __str__(self):
+        """ modified str function """
+        str_rectangle = "[Rectangle]"
+        str_id = "({})".format(self.id)
+        str_xy = "{}/{} - ".format(self.__x, self.__y)
+        str_wh = "{}/{}".format(self.__width, self.__height)
+        return str_rectangle + str_id + str_xy + str_wh
