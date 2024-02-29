@@ -22,4 +22,4 @@ def binary_search(a, lo, hi):
     if a[mid] > a[mid + 1]:
         return binary_search(a, lo, mid)
     else:
-        return binary_search(a, mid + 1, hi)    
+        return binary_search(a, mid + 1, hi)
